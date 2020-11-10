@@ -1,0 +1,17 @@
+li {
+    display: inline;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 25px;
+    }
+
+    .navbar {
+        min-height: 150px;
+        font-size:30px !important;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+      

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="image.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-light justify-content-center fixed-top">
+<a class="navbar-brand" href="#">
+  </a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <img src="https://www.hibiscusfoundation.org/images/logo.png" alt="logo" style="width:250px;">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+  </ul>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"  width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"  width="1100" height="500">
+    </div>
+  </div>
+</div>
+    <!--upload image-->
+    <form id="upload-form" method="post" enctype="multipart/form-data">
+    <input type='file' onchange="readURL(this);" accept="images/*" />
+    
+      <input class="btn btn-danger btn-lg" " type="submit" value="Submit & Proceed">
+    <img id="blah" src="#" alt="your image" />
+</form>
+</body>
+</html>
