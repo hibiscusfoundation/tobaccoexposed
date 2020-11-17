@@ -10,141 +10,45 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="image.js"></script>
+  <script defer src="../script/root.js"></script>
+  <script src="../script/search-username.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-light  fixed-top">
-<a class="navbar-brand" href="#">
-  </a>
-  <ul class="navbar-nav">
-    
-    <img src="https://www.hibiscusfoundation.org/images/logo.png" alt="logo" style="width:250px;">
-    
-  </ul>
-</nav>
-
-
-    <!--upload image-->
- <form id="upload-form" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" accept="images/*" />
-    <input class="btn btn-danger btn-lg" type="submit" value="Submit & Proceed"/>
- </form>
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 m-auto">
-      <div class="custom-file mb-3">
-        <input type="file" class="custom-file-input" id="upload-file">
-        <label for="upload-file" class="custom-file-label">Choose Image</label>
-        <img id="upload-file" src="#" alt="your image" />
-      </div>
+  <a class="navbar-brand" href="#">
+    </a>
+    <ul class="navbar-nav">
       
-        
-     
-
-      <h4 class="text-center my-3">Filters</h4>
-
-      <div class="row my-4 text-center">
-        <div class="col-md-3">
-          <div class="btn-group btn-group-sm">
-            <button class="filter-btn brightness-remove btn btn-info">-</button>
-            <button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
-            <button class="filter-btn brightness-add btn btn-info">+</button>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="btn-group btn-group-sm">
-            <button class="filter-btn contrast-remove btn btn-info">-</button>
-            <button class="btn btn-secondary btn-disabled" disabled>Contrast</button>
-            <button class="filter-btn contrast-add btn btn-info">+</button>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="btn-group btn-group-sm">
-            <button class="filter-btn saturation-remove btn btn-info">-</button>
-            <button class="btn btn-secondary btn-disabled" disabled>Saturation</button>
-            <button class="filter-btn saturation-add btn btn-info">+</button>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="btn-group btn-group-sm">
-            <button class="filter-btn vibrance-remove btn btn-info">-</button>
-            <button class="btn btn-secondary btn-disabled" disabled>Vibrance</button>
-            <button class="filter-btn vibrance-add btn btn-info">+</button>
-          </div>
-        </div>
-      </div>
-      <!-- ./row -->
-
-      <h4 class="text-center my-3">Effects</h4>
-
-      <div class="row mb-3">
-        <div class="col-md-3">
-          <button class="filter-btn vintage-add btn btn-dark btn-block">
-              Vintage
-            </button>
-        </div>
-        <div class="col-md-3">
-          <button class="filter-btn lomo-add btn btn-dark btn-block">
-              Lomo
-            </button>
-        </div>
-        <div class="col-md-3">
-          <button class="filter-btn clarity-add btn btn-dark btn-block">
-              Clarity
-            </button>
-        </div>
-        <div class="col-md-3">
-          <button class="filter-btn sincity-add btn btn-dark btn-block">
-              Sin City
-            </button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <button class="filter-btn crossprocess-add btn btn-dark btn-block">
-              Cross Process
-            </button>
-        </div>
-        <div class="col-md-3">
-          <button class="filter-btn pinhole-add btn btn-dark btn-block">
-              Pinhole
-            </button>
-        </div>
-        <div class="col-md-3">
-          <button class="filter-btn nostalgia-add btn btn-dark btn-block">
-              Nostalgia
-            </button>
-        </div>
-        <div class="col-md-3">
-          <button class="filter-btn hermajesty-add btn btn-dark btn-block">
-              Her Majesty
-            </button>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <button id="download-btn" class="btn btn-primary btn-block">Download Image</button>
-        </div>
-        <div class="col-md-6">
-          <button id="revert-btn" class="btn btn-danger btn-block">Remove Filters</button>
-        </div>
-      </div>
-    </div>
-  </div>
+      <img src="https://www.hibiscusfoundation.org/images/logo.png" alt="logo" style="width:250px;">
+      
+    </ul>
+  </nav>
+  <div id="root">
+    <div class="title">InstaSaver</div>
+    <search-username/>
 </div>
-
-  <!-- Copyright -->
-  <footer>
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://www.hibiscusfoundation.org"> hibiscusfoundation.org</a>
-  </div>
-  <!-- Copyright -->
-
-
-</footer>
+  <!--adding frame-->
+<br> <h2>Picture :-</h2>
+<img id="image2" class="image" src="https://i.picsum.photos/id/925/250/250.jpg?hmac=twWJdaKT46cPk1aNvB7aKdiLZoQzvzu5VW85OEUO4ys" width="200" />
+<img id="image1" class="image" src="https://lh3.googleusercontent.com/tIfRT-P_iJsNB4_wuMxkBJOPJQoo-kTu76uoQ9OpP-4k3-L30AsZvJ4r-Fuiz1eAlA" width="1" />
+<script> document.getElementById('image1').style.visibility = 'hidden'; </script>
+<br> <canvas class="result"></canvas>
+<h3>Click on the button to add a CSK frame to the picture</h3>
+<button class="Btn">ADD FRAME</button>
+<script>
+    let imgEle1 = document.getElementById("image1");
+    let imgEle2 = document.getElementById("image2");
+    let resEle = document.querySelector(".result");
+    var context = resEle.getContext("2d");
+    let BtnEle = document.querySelector(".Btn");
+    BtnEle.addEventListener("click", () => {
+        resEle.width = 200;
+        resEle.height = 300;
+        context.globalAlpha = 1.0;
+        context.drawImage(imgEle2, 0, 70,200,200);
+        context.globalAlpha = 1.0;
+        context.drawImage(imgEle1, 0, 0,206,270);
+    });
+</script>
 </body>
 </html>
