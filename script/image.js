@@ -9,6 +9,31 @@
     }
 print(image)
 
+function addFrame(){
+  let imgEle1 = document.getElementById("image1");
+  let imgEle2 = document.getElementById("blah");
+  let resEle = document.querySelector(".result");
+  var context = resEle.getContext("2d");
+  let BtnEle = document.querySelector(".Btn");
+  BtnEle.addEventListener("click", () => {
+      resEle.width = 200;
+      resEle.height = 300;
+      context.globalAlpha = 1.0;
+      context.drawImage(imgEle2, 0, 70,200,200);
+      context.globalAlpha = 1.0;
+      context.drawImage(imgEle1, 0, 0,200,270);
+  });
+
+  var link = document.createElement('a');
+    link.innerHTML = 'download image';
+    link.addEventListener('click', function (ev) {
+      link.href = canvas.toDataURL();
+      link.download = "mypainting.png";
+    }, false);
+    document.body.appendChild(link);
+  
+}
+
 window.onload = function(){
   var dwn = document.getElementById('btndownload');
       canvas = document.getElementById('canvas'),
