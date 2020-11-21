@@ -25,15 +25,13 @@
 
   <!--adding frame-->
   <input type='file' onchange="readURL(this);" accept="image/*"/>
-  <img id="blah" src="#" alt="your image" />
-  <img id="image1" class="image"
-    src="frame.png"
-    width="1" /> 
+  <img id="blah" src="#" alt="your image"  />
+  <img id="image1" class="image" src="frame.png" width="1" /> 
   <script> document.getElementById('image1').style.visibility = 'hidden'; </script>
   <br> 
   <div class="canvas__container">>
-    <canvas id="canvas" class="result"></canvas>
     <button class="Btn" onclick="addFrame()">ADD FRAME</button><br>
+    <canvas id="canvas" class="result"></canvas>
     <script>document.getElementById('btndownload');</script>
   </div> 
   <!-- Footer -->
