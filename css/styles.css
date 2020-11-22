@@ -67,7 +67,7 @@ li {
       }
 
       body {
-        background-image: url(https://image.shutterstock.com/image-vector/big-vector-set-doodle-260nw-66671500.jpg);
+        background-image: url('bg.jpg');
       }
 
       #container {
