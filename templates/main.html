@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="stylesheet" href="../css/styles.css">
@@ -21,26 +21,37 @@
       <img src="https://www.hibiscusfoundation.org/images/logo.png" alt="logo" style="width:250px;">
       
     </ul>
-  </nav>
-<body>
+  </nav> 
+
+  <button class="insta" onclick="displayinsta()">INSTAGRAM</button>
+  <button class="upload" onclick="display()">UPLOAD PHOTO</button>
+
   <!--adding frame-->
-  <input type='file' onchange="readURL(this);" accept="image/*"/>
-  <img id="blah" src="#" alt="your image"  />
+  <input type='file' onchange="readURL(this);" accept="image/*" id="uploadpic" style="display: none"/>
+  <img id="blah" src="#" style="display: none" /> 
   <img id="image1" class="image" src="frame.png" width="1" /> 
   <script> document.getElementById('image1').style.visibility = 'hidden'; </script>
   <br> 
-  <div class="canvas__container">>
-    <button class="Btn" onclick="addFrame()">ADD FRAME</button><br>
+  <div class="canvas__container">
+    <button class="Btn" onclick="addFrame()" id="addframe" style="display: none">ADD FRAME</button><br>
     <canvas id="canvas" class="result"></canvas>
-    <script>document.getElementById('btndownload');</script>
+    <script>document.getElementById('btndownload');
+      var link = document.createElement('a');
+    link.innerHTML = 'download image';
+    link.addEventListener('click', function (ev) {
+      link.href = canvas.toDataURL();
+      link.download = "myimage.png";
+    }, false);
+    document.body.appendChild(link);
+    </script>
   </div> 
   <!-- Footer -->
-<footer class="page-footer font-small blue">
+<!-- <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="https://www.hibiscusfoundation.org">hibiscusfoundation.org</a>
-  </div>
+  </div> --> 
   <!-- Copyright -->
 
 </footer>
