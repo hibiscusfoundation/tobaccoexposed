@@ -28,9 +28,9 @@ function addFrame(){
 }
 
 function display(){
-    document.getElementById("uploadpic").style.display="block";
+    document.getElementById("choosepic").style.display="block";
 }
 
 function displayinsta(){
-    document.getElementById("uploadpic").style.display="none";
+    document.getElementById("choosepic").style.display="none";
 }

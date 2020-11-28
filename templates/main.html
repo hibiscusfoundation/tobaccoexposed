@@ -14,10 +14,8 @@
 
 <!--navbar-->
  <nav class="navbar" navbar-expand-md bg-light>
-    <ul class="navbar-nav">
-      
-      <img src="https://www.hibiscusfoundation.org/images/logo.png" alt="logo" style="width:250px;">
-      
+    <ul class="navbar-nav"> 
+      <img src="logo.png" alt="logo" style="width:250px;"> 
     </ul>
   </nav> 
 
@@ -26,13 +24,17 @@
   <button class="upload" onclick="display()">UPLOAD PHOTO</button>
 
   <!--adding frame-->
+  <label class="fileupload" id="choosepic" style="display: none">
   <input type='file' onchange="readURL(this);" accept="image/*" id="uploadpic" style="display: none"/>
+  CHOOSE PICTURE
+  </label>
   <img id="blah" src="#" style="display: none" /> 
   <img id="image1" class="image" src="frame.png" width="1" /> 
   <script> document.getElementById('image1').style.visibility = 'hidden'; </script>
   <br> 
   <div class="canvas__container">
-    <button class="Btn" onclick="addFrame()" id="addframe" style="display: none">ADD FRAME</button><br>
+    <button class="Btn" onclick="addFrame()" id="addframe" style="display: none">ADD FRAME</button>
+    <br>
     <canvas id="canvas" class="result"></canvas>
     <script>document.getElementById('btndownload');
       var link = document.createElement('a');
@@ -49,7 +51,7 @@
  <a href="https://www.facebook.com/hibiscused/" target="_blank">
  <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_six-512.png" height="50"></a>
  <a href="https://www.linkedin.com/company/hibiscus-foundation/" target="_blank">
- <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_six_gray-512.png" height="50"></a>
+ <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_six_gray-512.png" height="50" style="margin: 10px 15px 10px 15px"></a>
  <a href="https://www.instagram.com/_hibiscused_/" target="_blank">
  <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_six-512.png" height="50"></a>
 </footer>
