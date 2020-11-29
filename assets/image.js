@@ -2,6 +2,7 @@
     if (input.files && input.files[0]) {
         document.getElementById("blah").style.display="block";
         document.getElementById("addframe").style.display="block";
+        document.getElementById("canvas").style.display="block";
         var reader = new FileReader();
         reader.onload = function (e) {
             $('#blah').attr('src', e.target.result).width(150).height(200);
@@ -20,17 +21,17 @@ function addFrame(){
   BtnEle.addEventListener("click", () => {
       resEle.width = imgEle2.width;
       resEle.height = imgEle2.height;
-      context.globalAlpha = 1.0;
       context.drawImage(imgEle2, 0, 0,imgEle2.width,imgEle2.height);
-      context.globalAlpha = 1.0;
       context.drawImage(imgEle1, 0, 0,imgEle2.width,imgEle2.height);
   });
 }
 
 function display(){
-    document.getElementById("choosepic").style.display="block";
+    document.getElementById("instagrampic").style.display="none";
 }
 
 function displayinsta(){
-    document.getElementById("choosepic").style.display="none";
+    document.getElementById("blah").style.display="none";
+    document.getElementById("canvas").style.display="none";
+    document.getElementById("addframe").style.display="none";
 }
