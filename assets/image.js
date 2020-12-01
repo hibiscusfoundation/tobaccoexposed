@@ -27,6 +27,8 @@ function readURL(input) {
       resEle.width = imgEle2.width;
       resEle.height = imgEle2.height;
       context.drawImage(imgEle2, 0, 0,imgEle2.width,imgEle2.height);
+      
+      //adding frame function
     // imgEle1.onload = function() {
     //   context.drawImage(this, 0, 0,imgEle2.width,imgEle2.height);
     // }
