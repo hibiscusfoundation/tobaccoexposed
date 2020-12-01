@@ -14,6 +14,7 @@
   <script src="assets\image.js"></script>
 </head>
 
+<body id="body">
 <!--navbar-->
  <nav class="navbar" navbar-expand-md bg-light>
     <ul class="navbar-nav"> 
@@ -39,16 +40,17 @@
   <input type='file' onchange="readURL(this);" accept="image/*" id="uploadpic" style="display: none"/>
   CHOOSE PICTURE
   </label> -->
-  <img id="blah" src="#" style="display: none" /> 
-  <img id="image1" class="image" src="assets\frame.png" width="1" /> 
-  <script> document.getElementById('image1').style.visibility = 'hidden'; </script>
+  <img id="blah" src="#" style="display: none" crossorigin="anonymous" /> 
+  <!-- <img id="image1" class="image"
+  src="https://cdn.pixabay.com/photo/2020/12/01/14/48/14-48-07-577_1280.png" width="200"
+  crossorigin="use-credentials" />  -->
   <br> 
   <div class="canvas__container">
     <button class="Btn" onclick="addFrame()" id="addframe" style="display: none">ADD FRAME</button>
     <br>
     <canvas id="canvas" class="result"></canvas>
    <!--download button-->
-    <script>document.getElementById('btndownload');
+    <script>
     var link = document.createElement('a');
     link.innerHTML = 'download image';
     link.addEventListener('click', function (ev) {
