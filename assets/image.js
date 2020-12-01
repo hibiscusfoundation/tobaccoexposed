@@ -11,12 +11,11 @@ function readURL(input) {
 
      }
     }
-    print(image)
   function addFrame(){
   // let imgEle1 = document.getElementById("image1");
   var imgEle1 = new Image();
   var src = "https://cdn.pixabay.com/photo/2020/12/01/14/48/14-48-07-577_1280.png";
-//   imgEle1.crossOrigin = "WTF";
+//   imgEle1.crossOrigin = "";
 //   imgEle1.src = "https://cdn.pixabay.com/photo/2020/12/01/14/48/14-48-07-577_1280.png";
   imgEle1.width = 200;
  // document.body.appendChild(imgEle1);
