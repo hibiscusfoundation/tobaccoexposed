@@ -4,8 +4,8 @@
 }
 
 canvas {
-   margin-right: 100px;
-  margin-left: 150px; 
+   /* margin-right: 100px;
+  margin-left: 150px;  */
   margin-top: 25px;
   display: block;
   background: rgba(172, 163, 163, 0);
@@ -16,16 +16,18 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   } 
 
-.Btn {
+.button {
   background-color: rgb(61, 55, 59); 
   border: 3px solid rgb(17, 17, 17);
   color: rgb(241, 240, 240);
   padding: 15px 32px;
   text-decoration: none;
   font-size: 16px;
-  margin-left: 20%; 
+  margin-left: 43%;
+  margin-top: 25px;
   cursor: pointer;
 }
 
@@ -79,8 +81,9 @@ body {
 #container {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
+  justify-content: center;
 }
 
 footer {
@@ -91,8 +94,4 @@ footer {
   background-color:rgb(61, 55, 59); 
   color: white;
   text-align: center;
-}
-
-a:link {
-  color: white;
 }
