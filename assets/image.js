@@ -1,3 +1,8 @@
+function randommessage() {
+  var random = Math.floor(Math.random() * $('.item').length);
+  $('.item').hide().eq(random).show();
+}
+
 function readURL(input) {
   if (input.files && input.files[0]) {
       document.getElementById("canvas").style.display="block";
