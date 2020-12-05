@@ -1,101 +1,98 @@
-     .navbar {
-        min-height: 50px;
-        background-color: rgb(61, 55, 59);
-      }
+.navbar {
+  min-height: 50px;
+  background-color: rgb(61, 55, 59);
+}
 
-      canvas {
-         margin-right: 100px;
-        margin-left: 150px; 
-        margin-top: 25px;
-        display: block;
-        background: rgba(172, 163, 163, 0);
-        width: 30%;
-      }
+canvas {
+   margin-right: 100px;
+  margin-left: 150px; 
+  margin-top: 25px;
+  display: block;
+  background: rgba(172, 163, 163, 0);
+  width: 30%;
+}
 
-      .canvas__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        } 
-      
-      .Btn {
-        background-color: rgb(61, 55, 59); 
-        border: 3px solid rgb(17, 17, 17);
-        color: rgb(241, 240, 240);
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        margin-left: 20%; 
-        cursor: pointer;
-      }
+.canvas__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  } 
 
-      .instagrampic{
-        background-color: rgb(61, 55, 59); 
-        border: 3px solid black;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        margin-top:10%;
-        width:200px;
-        margin-right: 10px; 
-        cursor: pointer;  
-      }
-      .fileupload{
-        background-color: rgb(61, 55, 59); 
-        border: 3px solid black;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        margin-top:10%;
-        width:200px;
-        cursor: pointer;
-      
-      }
-      
-   
+.Btn {
+  background-color: rgb(61, 55, 59); 
+  border: 3px solid rgb(17, 17, 17);
+  color: rgb(241, 240, 240);
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20%; 
+  cursor: pointer;
+}
 
-      input[type=file]{
-        display: none;
-      }
+.instagrampic{
+  background-color: rgb(61, 55, 59); 
+  border: 3px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top:10%;
+  width:200px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.fileupload{
+  background-color: rgb(61, 55, 59); 
+  border: 3px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+  margin-top:10%;
+  width:200px;
+  cursor: pointer;
+}
 
-      img {
-        /* display: block; */
-        margin-left: auto;
-        margin-right: auto;
-      }
+input[type=file]{
+  display: none;
+}
 
-      body {
-       background-image: url(https://i.pinimg.com/564x/28/4a/e7/284ae7030338530b771b93adf02434d4.jpg); 
-       padding-bottom: 100px;
-       @media (max-width: 979px) {
-       body {
-      padding-bottom: 0px;
-    }
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+ background-image: url(https://i.pinimg.com/564x/28/4a/e7/284ae7030338530b771b93adf02434d4.jpg); 
+  padding-bottom: 100px;
+@media (max-width: 979px) {
+  body {
+    padding-bottom: 0px;
   }
-      }
+}
+}
 
-      #container {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        text-align: center;
-      }
-    
-      footer {
-        position: fixed; 
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color:rgb(61, 55, 59); 
-        color: white;
-        text-align: center;
-      }
+#container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-      a:link {
-        color: white;
-      }
+footer {
+  position: fixed; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(61, 55, 59); 
+  color: white;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+}
