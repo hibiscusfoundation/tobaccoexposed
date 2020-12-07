@@ -61,7 +61,7 @@ function downloadimage() {
   var link = document.getElementById('dwnlink');
   link.addEventListener('click', function (ev) {
   link.href = canvas.toDataURL();
-  link.download = "myimage.png";
+  link.download = "hfswtobaccoexposed.png";
   }, false);
   document.body.appendChild(link);
 }

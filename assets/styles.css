@@ -23,7 +23,7 @@ canvas {
   padding: 15px 32px;
   text-decoration: none;
   font-size: 16px;
-  margin-left: 43%;
+  margin-left: 46%;
   margin-top: 25px;
   cursor: pointer;
 }
@@ -70,7 +70,7 @@ canvas {
 }
 
 #usernameInput{
-  margin-left: 30%;
+  margin-left: 35%;
 }
 
 img {
@@ -142,9 +142,9 @@ p {
   position: fixed;
   top: 55%;
   right: 0%;
-  -webkit-transform: translateY(50%);
+  /* -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
-  transform: translateY(50%);
+  transform: translateY(50%); */
 }
 
 .icon-bar a {
