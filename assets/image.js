@@ -1,12 +1,12 @@
 function randommessage() {
   var message = [
-    "Tobacco consumption kills 8 million people every year" ,
-    "Tobacco use is responsible for 25% of all cancer deaths globally" ,
-    "Over 1 million people die from second-hand smoke exposure every year" ,
-    "The tobacco industry spends an average of 23 million dollars every day on marketing" ,
-    "Smokeless doesn’t mean that it’s harmless" ,
-    "Children and adolescents who use e-cigarettes at least double their chance of smoking cigarettes later in life" ,
-    "E-cigarette use increases your risk of heart disease and lung disorders"
+    "Tobacco consumption kills 8 million people every year." ,
+    "Tobacco use is responsible for 25% of all cancer deaths globally." ,
+    "Over 1 million people die from second-hand smoke exposure every year." ,
+    "The tobacco industry spends an average of 23 million dollars every day on marketing." ,
+    "Smokeless doesn’t mean that it’s harmless." ,
+    "Children and adolescents who use e-cigarettes at least double their chance of smoking cigarettes later in life." ,
+    "E-cigarette use increases your risk of heart disease and lung disorders."
   ]
   var i = Math.floor(Math.random()*message.length);
   document.getElementById('msg').innerHTML = message[i];
