@@ -39,10 +39,10 @@ function readURL(input) {
     let imgEle1 = document.getElementById("frame");
     let resEle = document.querySelector(".result");
     var context = resEle.getContext("2d");
-    resEle.width = imgEle2.width;
-    resEle.height = imgEle2.height;
-    context.drawImage(imgEle2, 0, 0,imgEle2.width,imgEle2.height);
-    context.drawImage(imgEle1, 0, 0,imgEle2.width,imgEle2.height);
+    resEle.width = 600;
+    resEle.height = 600;
+    context.drawImage(imgEle2, 0, 0,600,600);
+    context.drawImage(imgEle1, 0, 0,600,600);
     downloadimage();
 }
 
